@@ -85,45 +85,44 @@ Installation de GNOME 0.1
 
     5. Automake
       Vérification :
+          automake --version
+      Installation si nécessaire :
+        Ubuntu/Debian : 
+          sudo apt-get install automake
+        Fedora : 
+          sudo dnf install automake
+        Arch Linux : 
+          sudo pacman -S automake
 
-A REDIGER
-automake --version
-Installation si nécessaire :
+    6. Libtool
+      Vérification :
+          libtool --version
+      Installation si nécessaire :
+        Ubuntu/Debian : 
+          sudo apt-get install libtool
+        Fedora : 
+          sudo dnf install libtool
+        Arch Linux : 
+          sudo pacman -S libtool
 
-Ubuntu/Debian : sudo apt-get install automake
-Fedora : sudo dnf install automake
-Arch Linux : sudo pacman -S automake
-
-6. Libtool
-
-Vérification :
-libtool --version
-Installation si nécessaire :
-
-Ubuntu/Debian : sudo apt-get install libtool
-Fedora : sudo dnf install libtool
-Arch Linux : sudo pacman -S libtool
 Étapes d'installation :
-Télécharger les sources :
 
-wget https://download.gnome.org/desktop/0.x/gnome-0.1.tar.gz
-Extraire l'archive :
+  Télécharger les sources :
+    wget https://download.gnome.org/desktop/0.x/gnome-0.1.tar.gz
 
+  Extraire l'archive :
+    tar -xvzf gnome-0.1.tar.gz
 
-tar -xvzf gnome-0.1.tar.gz
-Se déplacer dans le répertoire extrait :
+  Se déplacer dans le répertoire extrait :
+    cd gnome-0.1
 
+  Lancer le script de configuration :
+    ./configure
 
-cd gnome-0.1
-Lancer le script de configuration :
+  Compiler le code source :
+    make
 
+  Installer GNOME :
+    sudo make install
 
-./configure
-Compiler le code source :
-
-
-make
-Installer GNOME :
-
-sudo make install
 Et voilà ! Redémarre ton système, et GNOME 0.1 sera installé :).
