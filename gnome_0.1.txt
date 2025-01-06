@@ -83,13 +83,10 @@ Installation de GNOME 0.1
         Arch Linux : 
           sudo pacman -S autoconf
 
-########################################################################################################################################################(last updated: 05/01/2025 at 11:14 PM)
+    5. Automake
+      Vérification :
 
-5. Automake
-Vérification :
-
-bash
-Copier le code
+A REDIGER
 automake --version
 Installation si nécessaire :
 
@@ -109,28 +106,22 @@ Arch Linux : sudo pacman -S libtool
 Étapes d'installation :
 Télécharger les sources :
 
-bash
-Copier le code
 wget https://download.gnome.org/desktop/0.x/gnome-0.1.tar.gz
 Extraire l'archive :
 
-bash
-Copier le code
+
 tar -xvzf gnome-0.1.tar.gz
 Se déplacer dans le répertoire extrait :
 
-bash
-Copier le code
+
 cd gnome-0.1
 Lancer le script de configuration :
 
-bash
-Copier le code
+
 ./configure
 Compiler le code source :
 
-bash
-Copier le code
+
 make
 Installer GNOME :
 
